@@ -1,0 +1,19 @@
+{
+  "name": "node-afk-test",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "afk": "^0.4.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-load-plugins": "^0.6.0",
+    "gulp-zip": "^2.0.1"
+  }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>node-afk-test</title>
+</head>
+<body>
+    <p>Hello world!</p>
+    <ol id="events"></ol>
+
+    <script>
+        var afk = require('afk');
+
+        var seconds = 2;
+
+        var listenerId = afk.addListener(seconds, function(e) {
+            var item = document.createElement('li');
+            item.innerText = JSON.stringify(e);
+            document.getElementById('events').appendChild(item);
+        });
+    </script>
+</body>
+</html>
